@@ -1,3 +1,5 @@
+import kotlinx.cli.ArgParser
+
 val kotli = """
 　　　　　　　　　　　　　　 ,, -―-、
 　　　　　　　　　　　　　／　　　　 ヽ
@@ -15,8 +17,8 @@ val kotli = """
 
 
 fun main(args: Array<String>) {
-//    val parser = ArgParser("kotli")
-//    parser.parse(args)
+    val parser = ArgParser("kotli")
+    parser.parse(args)
 
     print(kotli)
 }
