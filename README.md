@@ -1,6 +1,6 @@
 # kotli
 
-This CLI tool shows kotli (small bird in Japanese).
+This CLI tool shows kotli (small bird in Japanese) implemented in Kotlin.
 
 ```
 $ kotli-mac.kexe
@@ -38,7 +38,7 @@ Download binary from github release page.
 
 ## benchmark result
 
-Native build is 18x faster than JVM build.
+Kotlin-Native build is 18x faster than JVM build.
 
 | Prepare                                                   | Command | Mean [ms] | Min [ms] | Max [ms] | Relative |
 |:----------------------------------------------------------|:---|---:|---:|---:|---:|
