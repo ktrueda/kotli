@@ -1,4 +1,6 @@
 import kotlinx.cli.ArgParser
+import kotlinx.cli.ArgType
+import kotlinx.cli.default
 
 val kotli = """
 　　　　　　　　　　　　　　 ,, -―-、
@@ -15,10 +17,22 @@ val kotli = """
 　　　　　　　　　　　　　　　　　　　　Ｕ
 """.trimIndent()
 
+val starLightKotli = kotli
+    .replace("ｏ", "🌟")
+    .replace("U", "⭐️")
+    .replace("∴", "💫")
+    .replace("Ｕ", "👅")
+    .replace("゜", "👁")
+
 
 fun main(args: Array<String>) {
     val parser = ArgParser("kotli")
+    val emoji by parser.option(ArgType.Boolean, shortName = "e", description = "Use emoji").default(false)
     parser.parse(args)
-
-    print(kotli)
+    
+    val exp = when (emoji) {
+        true -> starLightKotli
+        else -> kotli
+    }
+    print(exp)
 }
