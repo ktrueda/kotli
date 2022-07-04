@@ -3,7 +3,7 @@
 This CLI tool shows kotli (small bird in Japanese).
 
 ```
-$ mac.kexe
+$ kotli-mac.kexe
 　　　　　　　　　　　　 ,, -―-、
 　　　　　　　　　　　／　　　　 ヽ
 　　　　　／￣￣／　　／i⌒ヽ､|　　　　オエーー！！！！
@@ -17,6 +17,10 @@ $ mac.kexe
 　　　　　　　　　　　　　　　　　　|：!
 　　　　　　　　　　　　　　　　　　Ｕ
 ```
+
+## installation
+
+Download binary from github release page.
 
 ## benchmark result
 
