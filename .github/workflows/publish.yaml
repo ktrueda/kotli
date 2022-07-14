@@ -2,7 +2,7 @@ name: Publish lib/native
 on:
   push:
     branches:
-      - develop
+      - master
 jobs:
   test:
     runs-on: ubuntu-latest
