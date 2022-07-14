@@ -1,6 +1,6 @@
 # kotli
 
-This CLI tool shows kotli (small bird in Japanese) implemented in Kotlin.
+This CLI tool shows kotli (small bird in Japanese). kotli was implemented in Kotlin.
 
 ```
 $ kotli-mac.kexe
@@ -34,7 +34,7 @@ $ kotli-mac.kexe -e
 
 ## installation
 
-Download binary from github release page.
+Download the binary from github release page.
 
 ## benchmark result
 
