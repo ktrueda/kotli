@@ -2,37 +2,20 @@ import kotlinx.cli.ArgParser
 import kotlinx.cli.ArgType
 import kotlinx.cli.default
 
-val kotli = """
-　　　　　　　　　　　　　　 ,, -―-、
-　　　　　　　　　　　　　／　　　　 ヽ
-　　　　　　　／￣￣／　　／i⌒ヽ､|　　　　オエーー！！！！
-　　　　　　/　　（゜）/　　 ／　/
-　　　　　/　　　　 ト､.,../　,ー-､
-　　　　=彳　　　　　 ＼＼‘ﾟ。､｀ ヽ。、ｏ
-　　　　/ 　 　　　　　　　＼＼ﾟ。､。、ｏ
-　　　/　　　　　　　　　/⌒ ヽ ヽU　　ｏ
-　　 /　　　　　　　　　│　　　`ヽU　∴ｌ
-　　│　　　　　　　　　│　　　　　U　：l
-　　　　　　　　　　　　　　　　　　　　|：!
-　　　　　　　　　　　　　　　　　　　　Ｕ
-""".trimIndent()
-
-val starLightKotli = kotli
-    .replace("ｏ", "🌟")
-    .replace("U", "⭐️")
-    .replace("∴", "💫")
-    .replace("Ｕ", "👅")
-    .replace("゜", "👁")
-
+enum class Format {
+    INKO,
+    NONE
+}
 
 fun main(args: Array<String>) {
     val parser = ArgParser("kotli")
-    val emoji by parser.option(ArgType.Boolean, shortName = "e", description = "Use emoji").default(false)
+    val kind by parser.option(
+        ArgType.Choice<Format>(), shortName = "k",
+        description = "kind of kotli"
+    ).default(Format.NONE)
     parser.parse(args)
-    
-    val exp = when (emoji) {
-        true -> starLightKotli
-        else -> kotli
-    }
+
+
+    val exp = birds[kind.name.lowercase()] ?: defaultBird
     print(exp)
 }
