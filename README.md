@@ -3,7 +3,7 @@
 This CLI tool shows kotli (small bird in Japanese). kotli was implemented in Kotlin.
 
 ```
-$ kotli-mac.kexe
+$ kotli.kexe
 　　　　　　　　　　　　 ,, -―-、
 　　　　　　　　　　　／　　　　 ヽ
 　　　　　／￣￣／　　／i⌒ヽ､|　　　　オエーー！！！！
@@ -17,19 +17,22 @@ $ kotli-mac.kexe
 　　　　　　　　　　　　　　　　　　|：!
 　　　　　　　　　　　　　　　　　　Ｕ
 
-$ kotli-mac.kexe -e
-　　　　　　　　　　　　 ,, -―-、
-　　　　　　　　　　　／　　　　 ヽ
-　　　　　／￣￣／　　／i⌒ヽ､|　　　　オエーー！！！！
-　　　　/　　（👁）/　　 ／　/
-　　　/　　　　 ト､.,../　,ー-､
-　　=彳　　　　　 ＼＼‘ﾟ。､｀ ヽ。、🌟
-　　/ 　 　　　　　　　＼＼ﾟ。､。、🌟
-　/　　　　　　　　　/⌒ ヽ ヽ⭐️　　🌟
- /　　　　　　　　　│　　　`ヽ⭐️　💫ｌ
-│　　　　　　　　　│　　　　　⭐️　：l
-　　　　　　　　　　　　　　　　　　|：!
-　　　　　　　　　　　　　　　　　　👅⏎
+$ kotli.kexe --kind inko
+
+       　　　　　　　　　　　　　　／￣￣￣￣＼
+　　　　　　　　　　　　　　　　 ／　　　　　 　　　 ）
+　　　　　　　　　　　　　　　／　　　　●　 (⌒⌒)
+　　　　　　　　　　　　　 ／　　　　　　　　　＼ノ
+　　　　　　　　　　　　／　"""゛゛ヽ　　　 　　　|
+　　　　　　　　　　 ／　　　　　　　） 　 　 　 　|
+　　　　　　　　　／　　　　　　ノノ　 　 　 　 　|
+　　　　　　　 ／　　　　　　ノノ　　　　 　　　/
+　　　　　　／　　　　　　ノノ　　　　　　　　/
+　　　　 ／　　　　　　／ 　　　　　　　　／
+　　　／　彡ミ（_）二二二)) ))二二二)) ))二二二)
+　 ／　彡
+／／
+"゛
 ```
 
 ## installation
